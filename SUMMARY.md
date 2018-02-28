@@ -1,6 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [First Chapter](chapter1.md)
-* [let与var](./content/javaScript/let and var.md)
+* [javaScript](./javaScript/let and var.md)
+* [let与var](./javaScript/let and var.md)
 
