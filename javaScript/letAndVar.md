@@ -1,3 +1,6 @@
+## let 与 var
+----
+
 ```
 for(let i = 0; i < 3; i++) {
     setTimeout(function() {
