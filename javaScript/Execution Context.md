@@ -1,0 +1,27 @@
+## 执行上下文
+----
+
+### 定义：
+* 在执行代码之前，把将要用到的所有的变量都事先拿出来，有的直接赋值了，有的先用undefined占个空。
+
+### VO按照如下顺序填充: 
+1.  函数参数  
+2.  函数声明  
+  * 若发生命名冲突，函数声明会覆盖变量声明，但不会覆盖变量赋值，变量赋值后就会覆盖函数声明
+
+3.  变量声明
+
+```
+function context() {
+    console.log(typeof foo) // function
+    var bar = function() {
+      return 'abc'
+    }
+    function foo() {
+      return 'bcd'
+    }
+    var foo = 1;
+    console.log(typeof foo) // number
+}
+```
+
