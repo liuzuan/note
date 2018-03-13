@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>1.2. 执行上下文 · GitBook</title>
+        <title>3.1. 打包并且push到分支 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,6 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../css/" />
-    
-    
-    <link rel="prev" href="let与Var.html" />
     
 
     </head>
@@ -122,9 +118,9 @@
         
         
     
-        <li class="chapter " data-level="2.1" data-path="./">
+        <li class="chapter " data-level="2.1" data-path="../javaScript/">
             
-                <a href="./">
+                <a href="../javaScript/">
             
                     
                     1. JAVASCRIPT
@@ -136,9 +132,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1.1" data-path="let与Var.html">
+        <li class="chapter " data-level="2.1.1" data-path="../javaScript/let与Var.html">
             
-                <a href="let与Var.html">
+                <a href="../javaScript/let与Var.html">
             
                     
                     1.1. let与var
@@ -149,9 +145,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.1.2" data-path="执行上下文.html">
+        <li class="chapter " data-level="2.1.2" data-path="../javaScript/执行上下文.html">
             
-                <a href="执行上下文.html">
+                <a href="../javaScript/执行上下文.html">
             
                     
                     1.2. 执行上下文
@@ -213,9 +209,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.3.1" data-path="../github/build包push.html">
+        <li class="chapter active" data-level="2.3.1" data-path="build包push.html">
             
-                <a href="../github/build包push.html">
+                <a href="build包push.html">
             
                     
                     3.1. 打包并且push到分支
@@ -261,7 +257,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >1.2. 执行上下文</a>
+        <a href=".." >3.1. 打包并且push到分支</a>
     </h1>
 </div>
 
@@ -276,34 +272,41 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="&#x6267;&#x884C;&#x4E0A;&#x4E0B;&#x6587;">&#x6267;&#x884C;&#x4E0A;&#x4E0B;&#x6587;</h2>
+                                <h2 id="build&#x5FEB;&#x901F;push&#x5230;github&#x5206;&#x652F;ph-pages"><font color="#0099ff" size="5" face="&#x9ED1;&#x4F53;">build&#x5FEB;&#x901F;push&#x5230;github&#x5206;&#x652F;ph-pages</font></h2>
 <hr>
-<h3 id="&#x5B9A;&#x4E49;&#xFF1A;">&#x5B9A;&#x4E49;&#xFF1A;</h3>
 <ul>
-<li>&#x5728;&#x6267;&#x884C;&#x4EE3;&#x7801;&#x4E4B;&#x524D;&#xFF0C;&#x628A;&#x5C06;&#x8981;&#x7528;&#x5230;&#x7684;&#x6240;&#x6709;&#x7684;&#x53D8;&#x91CF;&#x90FD;&#x4E8B;&#x5148;&#x62FF;&#x51FA;&#x6765;&#xFF0C;&#x6709;&#x7684;&#x76F4;&#x63A5;&#x8D4B;&#x503C;&#x4E86;&#xFF0C;&#x6709;&#x7684;&#x5148;&#x7528;undefined&#x5360;&#x4E2A;&#x7A7A;&#x3002;</li>
+<li>&#x95EE;&#x9898;&#xFF1A;&#x6211;&#x4EEC;&#x6BCF;&#x6B21;&#x4FEE;&#x6539;&#x4EE3;&#x7801;&#x540E;&#x91CD;&#x65B0;&#x6253;&#x5305;&#x5E76;&#x5C06;&#x6253;&#x5305;&#x540E;&#x7684;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x5230;github&#x4ED3;&#x5E93;&#x5206;&#x652F;&#xFF0C;&#x5F88;&#x9EBB;&#x70E6;&#x3002;</li>
+<li>&#x529E;&#x6CD5;&#xFF1A;&#x6211;&#x4EEC;&#x91C7;&#x7528;&#x4E00;&#x4E2A; npm &#x5305;&#xFF0C;&#x6765;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x5B8C;&#x6210;&#x4E0A;&#x9762;&#x7684;&#x64CD;&#x4F5C;&#xFF1A;</li>
 </ul>
-<h3 id="vo&#x6309;&#x7167;&#x5982;&#x4E0B;&#x987A;&#x5E8F;&#x586B;&#x5145;">VO&#x6309;&#x7167;&#x5982;&#x4E0B;&#x987A;&#x5E8F;&#x586B;&#x5145;:</h3>
-<ol>
-<li>&#x51FD;&#x6570;&#x53C2;&#x6570;  </li>
-<li><p>&#x51FD;&#x6570;&#x58F0;&#x660E;  </p>
-<ul>
-<li>&#x82E5;&#x53D1;&#x751F;&#x547D;&#x540D;&#x51B2;&#x7A81;&#xFF0C;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x4F1A;&#x8986;&#x76D6;&#x53D8;&#x91CF;&#x58F0;&#x660E;&#xFF0C;&#x4F46;&#x4E0D;&#x4F1A;&#x8986;&#x76D6;&#x53D8;&#x91CF;&#x8D4B;&#x503C;&#xFF0C;&#x53D8;&#x91CF;&#x8D4B;&#x503C;&#x540E;&#x5C31;&#x4F1A;&#x8986;&#x76D6;&#x51FD;&#x6570;&#x58F0;&#x660E;</li>
+<pre><code>cd my-project/
+npm i --save gh-pages
+</code></pre><ul>
+<li>&#x7136;&#x540E;&#x521B;&#x5EFA; my-project/scripts/deploy-gh-pages.js,&#x6DFB;&#x52A0;&#x5185;&#x5BB9;&#xFF1A;</li>
 </ul>
-</li>
-<li><p>&#x53D8;&#x91CF;&#x58F0;&#x660E;</p>
-</li>
-</ol>
-<pre><code>function context() {
-    console.log(typeof foo) // function
-    var bar = function() {
-      return &apos;abc&apos;
-    }
-    function foo() {
-      return &apos;bcd&apos;
-    }
-    var foo = 1;
-    console.log(typeof foo) // number
+<pre><code>&apos;use strict&apos;;
+
+var ghpages = require(&apos;gh-pages&apos;);
+
+main();
+
+function main() {
+    ghpages.publish(&apos;./gh-pages&apos;, console.error.bind(console));
 }
+</code></pre><ul>
+<li>package.json &#x4E2D;&#x6DFB;&#x52A0;&#x8FD9;&#x4E9B;&#x4EE3;&#x7801;&#xFF1A;</li>
+</ul>
+<pre><code>&quot;scripts&quot;: {
+ &quot;start&quot;: &quot;gitbook serve ./content ./gh-pages&quot;,
+ &quot;build&quot;: &quot;gitbook build ./content ./gh-pages&quot;,
+ &quot;deploy&quot;: &quot;node ./scripts/deploy-gh-pages.js&quot;,
+ &quot;publish&quot;: &quot;npm run build &amp;&amp; npm run deploy&quot;,
+ &quot;port&quot;: &quot;lsof -i :35729&quot;
+},
+// ./pg-pages&#x4E3A;&#x6253;&#x5305;&#x540E;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x8DEF;&#x5F84;&#xFF0C;&#x6587;&#x4EF6;&#x5939;&#x540D;&#x89C6;&#x60C5;&#x51B5;&#x4FEE;&#x6539;
+</code></pre><ul>
+<li>&#x8FD9;&#x6837;&#xFF0C;&#x6BCF;&#x6B21;&#x6709;&#x4E86;&#x4FEE;&#x6539;&#xFF0C;&#x8FD0;&#x884C;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#x5B8C;&#x6210;&#x6253;&#x5305;&#x548C;&#x4E0A;&#x4F20;&#x5DE5;&#x4F5C;</li>
+</ul>
+<pre><code>npm run publish
 </code></pre>
                                 
                                 </section>
@@ -331,14 +334,6 @@
 
             
                 
-                <a href="let与Var.html" class="navigation navigation-prev " aria-label="Previous page: 1.1. let与var">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                
-                
-                <a href="../css/" class="navigation navigation-next " aria-label="Next page: 2. CSS">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -347,7 +342,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.2. 执行上下文","level":"2.1.2","depth":2,"next":{"title":"2. CSS","level":"2.2","depth":1,"path":"css/index.md","ref":"./css/index.md","articles":[{"title":"2.1. bfc","level":"2.2.1","depth":2,"path":"css/bfc.md","ref":"./css/bfc.md","articles":[]}]},"previous":{"title":"1.1. let与var","level":"2.1.1","depth":2,"path":"javaScript/let与Var.md","ref":"./javaScript/let与Var.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"javaScript/执行上下文.md","mtime":"2018-03-12T18:13:17.376Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-13T06:59:07.353Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3.1. 打包并且push到分支","level":"2.3.1","depth":2,"previous":{"title":"3. github使用","level":"2.3","depth":1,"ref":"","articles":[{"title":"3.1. 打包并且push到分支","level":"2.3.1","depth":2,"path":"github/build包push.md","ref":"./github/build包push.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"github/build包push.md","mtime":"2018-03-12T18:50:31.646Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-13T06:59:07.353Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

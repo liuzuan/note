@@ -199,6 +199,38 @@
             
         </li>
     
+        <li class="chapter " data-level="2.3" >
+            
+                <span>
+            
+                    
+                    3. github使用
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../github/build包push.html">
+            
+                <a href="../github/build包push.html">
+            
+                    
+                    3.1. 打包并且push到分支
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
     
 
@@ -246,36 +278,46 @@
                                 
                                 <h2 id="let-&#x4E0E;-var">let &#x4E0E; var</h2>
 <hr>
-<pre><code>for(let i = 0; i &lt; 3; i++) {
-  setTimeout(function() {
-    console.log(i);
-  }, 1000);
+<p>&#x5148;&#x770B;&#x4E00;&#x6BB5;&#x6B63;&#x5E38;&#x7684;for&#x5FAA;&#x73AF;&#x4EE3;&#x7801;</p>
+<pre><code>var arr = [];
+for(var i = 0; i &lt; 3; i++) {
+  arr[i] = i; 
 }
-// 0
-// 1
-// 2
+// [0, 1, 2]
+</code></pre><p>&#x4F46;&#x662F;&#xFF0C;&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728;&#x5FAA;&#x73AF;&#x4F53;&#x4E2D;&#x5B9E;&#x73B0;&#x66F4;&#x591A;&#x529F;&#x80FD;</p>
+<pre><code>var arr = [];
+for(var i = 0; i &lt; 3; i++) {
+  arr[i] = function(){
+    return i; 
+  }
+}
+alert(arr[0]()) // 3 
+// &#x8F93;&#x51FA;3&#x5E76;&#x4E0D;&#x662F;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x7684;
 </code></pre><ul>
-<li>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x53D8;&#x91CF;i&#x662F;let&#x58F0;&#x660E;&#x7684;&#xFF0C;&#x5F53;&#x524D;&#x7684;i&#x53EA;&#x5728;&#x672C;&#x8F6E;&#x5FAA;&#x73AF;&#x6709;&#x6548;&#xFF0C;&#x6240;&#x4EE5;&#x6BCF;&#x4E00;&#x6B21;&#x5FAA;&#x73AF;&#x7684;i&#x5176;&#x5B9E;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x53D8;&#x91CF;&#x3002;</li>
+<li>&#x2460;&#x7528;let&#x800C;&#x4E0D;&#x7528;var</li>
 </ul>
-<pre><code>for(var i = 0; i &lt; 3; i++) {
-    setTimeout(function() {
-      console.log(i);
-    }, 1000);
+<pre><code>var arr = [];
+for(let i = 0; i &lt; 3; i++) {
+  arr[i] = function(){
+    return i; 
+  }
 }
-// 3
-// 3
-// 3
-</code></pre><pre><code>for(var i = 0, arr = []; i &lt; 3; i++) {
-  arr.push((function(prop){
-    return function() {
-      console.log(prop)
-    }
-  })(i))
+alert(arr[0]()) // 0
+// &#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x53D8;&#x91CF;i&#x662F;let&#x58F0;&#x660E;&#x7684;&#xFF0C;&#x5F53;&#x524D;&#x7684;i&#x53EA;&#x5728;&#x672C;&#x8F6E;&#x5FAA;&#x73AF;&#x6709;&#x6548;&#xFF0C;&#x6240;&#x4EE5;&#x6BCF;&#x4E00;&#x6B21;&#x5FAA;&#x73AF;&#x7684;i&#x5176;&#x5B9E;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x53D8;&#x91CF;&#x3002;
+</code></pre><ul>
+<li>&#x2461;&#x5982;&#x679C;&#x8981;&#x4F7F;&#x7528;var&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x95ED;&#x5305;&#x6765;<pre><code>for(var i = 0, arr = []; i &lt; 3; i++) {
+arr.push((function(prop){
+  return function() {
+    console.log(prop)
+  }
+})(i))
 }
 arr[0]() // 0
 arr[1]() // 1
 arr[2]() // 2
-</code></pre><pre><code>for(var i = 0, arr = []; i &lt; 3; i++) {
+</code></pre></li>
+</ul>
+<pre><code>for(var i = 0, arr = []; i &lt; 3; i++) {
   arr.push(
     function() {
       console.log(i)
@@ -328,7 +370,7 @@ arr[2]() // 3
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.1. let与var","level":"2.1.1","depth":2,"next":{"title":"1.2. 执行上下文","level":"2.1.2","depth":2,"path":"javaScript/执行上下文.md","ref":"./javaScript/执行上下文.md","articles":[]},"previous":{"title":"1. JAVASCRIPT","level":"2.1","depth":1,"path":"javaScript/index.md","ref":"./javaScript/index.md","articles":[{"title":"1.1. let与var","level":"2.1.1","depth":2,"path":"javaScript/let与Var.md","ref":"./javaScript/let与Var.md","articles":[]},{"title":"1.2. 执行上下文","level":"2.1.2","depth":2,"path":"javaScript/执行上下文.md","ref":"./javaScript/执行上下文.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"javaScript/let与Var.md","mtime":"2018-03-12T18:13:29.671Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-12T18:16:45.620Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.1. let与var","level":"2.1.1","depth":2,"next":{"title":"1.2. 执行上下文","level":"2.1.2","depth":2,"path":"javaScript/执行上下文.md","ref":"./javaScript/执行上下文.md","articles":[]},"previous":{"title":"1. JAVASCRIPT","level":"2.1","depth":1,"path":"javaScript/index.md","ref":"./javaScript/index.md","articles":[{"title":"1.1. let与var","level":"2.1.1","depth":2,"path":"javaScript/let与Var.md","ref":"./javaScript/let与Var.md","articles":[]},{"title":"1.2. 执行上下文","level":"2.1.2","depth":2,"path":"javaScript/执行上下文.md","ref":"./javaScript/执行上下文.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"javaScript/let与Var.md","mtime":"2018-03-12T19:10:26.814Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-13T06:59:07.353Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
