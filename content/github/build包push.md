@@ -20,19 +20,17 @@ main();
 function main() {
     ghpages.publish('./gh-pages', console.error.bind(console));
 }
+// ./pg-pages为打包后的文件夹路径，文件夹名视情况修改
 ```
 
 * package.json 中添加这些代码：
 
 ```
 "scripts": {
- "start": "gitbook serve ./content ./gh-pages",
- "build": "gitbook build ./content ./gh-pages",
  "deploy": "node ./scripts/deploy-gh-pages.js",
  "publish": "npm run build && npm run deploy",
  "port": "lsof -i :35729"
 },
-// ./pg-pages为打包后的文件夹路径，文件夹名视情况修改
 ```
 
 * 这样，每次有了修改，运行如下命令完成打包和上传工作
