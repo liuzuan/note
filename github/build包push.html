@@ -98,7 +98,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="../">
+        <li class="chapter " data-level="1.2" >
+            
+                <a target="_blank" href="http://liuzuann.com">
+            
+                    
+                    个人简历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../">
             
                 <a href="../">
             
@@ -151,6 +164,32 @@
             
                     
                     1.2. 执行上下文
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../javaScript/排序算法.html">
+            
+                <a href="../javaScript/排序算法.html">
+            
+                    
+                    1.3. 排序算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../javaScript/原型原型链继承.html">
+            
+                <a href="../javaScript/原型原型链继承.html">
+            
+                    
+                    1.4. 原型、原型链、继承
             
                 </a>
             
@@ -215,6 +254,70 @@
             
                     
                     3.1. 打包并且push到分支
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" >
+            
+                <span>
+            
+                    
+                    4. 移动端问题
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../移动端/点击穿透.html">
+            
+                <a href="../移动端/点击穿透.html">
+            
+                    
+                    4.1. 点击穿透问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" >
+            
+                <span>
+            
+                    
+                    4. 兼容问题
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../兼容问题/ie.html">
+            
+                <a href="../兼容问题/ie.html">
+            
+                    
+                    ie兼容
             
                 </a>
             
@@ -292,17 +395,15 @@ main();
 function main() {
     ghpages.publish(&apos;./gh-pages&apos;, console.error.bind(console));
 }
+// ./pg-pages&#x4E3A;&#x6253;&#x5305;&#x540E;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x8DEF;&#x5F84;&#xFF0C;&#x6587;&#x4EF6;&#x5939;&#x540D;&#x89C6;&#x60C5;&#x51B5;&#x4FEE;&#x6539;
 </code></pre><ul>
 <li>package.json &#x4E2D;&#x6DFB;&#x52A0;&#x8FD9;&#x4E9B;&#x4EE3;&#x7801;&#xFF1A;</li>
 </ul>
 <pre><code>&quot;scripts&quot;: {
- &quot;start&quot;: &quot;gitbook serve ./content ./gh-pages&quot;,
- &quot;build&quot;: &quot;gitbook build ./content ./gh-pages&quot;,
  &quot;deploy&quot;: &quot;node ./scripts/deploy-gh-pages.js&quot;,
  &quot;publish&quot;: &quot;npm run build &amp;&amp; npm run deploy&quot;,
  &quot;port&quot;: &quot;lsof -i :35729&quot;
 },
-// ./pg-pages&#x4E3A;&#x6253;&#x5305;&#x540E;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x8DEF;&#x5F84;&#xFF0C;&#x6587;&#x4EF6;&#x5939;&#x540D;&#x89C6;&#x60C5;&#x51B5;&#x4FEE;&#x6539;
 </code></pre><ul>
 <li>&#x8FD9;&#x6837;&#xFF0C;&#x6BCF;&#x6B21;&#x6709;&#x4E86;&#x4FEE;&#x6539;&#xFF0C;&#x8FD0;&#x884C;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#x5B8C;&#x6210;&#x6253;&#x5305;&#x548C;&#x4E0A;&#x4F20;&#x5DE5;&#x4F5C;</li>
 </ul>
@@ -342,7 +443,7 @@ function main() {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3.1. 打包并且push到分支","level":"2.3.1","depth":2,"previous":{"title":"3. github使用","level":"2.3","depth":1,"ref":"","articles":[{"title":"3.1. 打包并且push到分支","level":"2.3.1","depth":2,"path":"github/build包push.md","ref":"./github/build包push.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"github/build包push.md","mtime":"2018-03-12T18:50:31.646Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-13T06:59:07.353Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3.1. 打包并且push到分支","level":"2.3.1","depth":2,"next":{"title":"4. 移动端问题","level":"2.4","depth":1,"ref":"","articles":[{"title":"4.1. 点击穿透问题","level":"2.4.1","depth":2,"path":"移动端/点击穿透.md","ref":"./移动端/点击穿透.md","articles":[]}]},"previous":{"title":"3. github使用","level":"2.3","depth":1,"ref":"","articles":[{"title":"3.1. 打包并且push到分支","level":"2.3.1","depth":2,"path":"github/build包push.md","ref":"./github/build包push.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"github/build包push.md","mtime":"2018-03-13T07:06:44.073Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-19T14:59:47.499Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
