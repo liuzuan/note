@@ -1,7 +1,7 @@
 # Summary
 
 * [My GitHub](https://github.com/liuzuan)
-* [我的站点](http://liuzuann.com)
+* [个人简历](http://liuzuann.com)
 * [前言](README.md)
 
 ----
@@ -9,6 +9,8 @@
 * [1. JAVASCRIPT](./javaScript/index.md)
   * [1.1. let与var](./javaScript/let与Var.md)
   * [1.2. 执行上下文](./javaScript/执行上下文.md)
+  * [1.3. 排序算法](./javaScript/排序算法.md)
+  * [1.4. 原型、原型链、继承](./javaScript/原型原型链继承.md)
 * [2. CSS](./css/index.md)
   * [2.1. bfc](./css/bfc.md)
 * [3. github使用]()
