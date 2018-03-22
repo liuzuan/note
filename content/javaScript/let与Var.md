@@ -36,6 +36,7 @@ alert(arr[0]()) // 0
 
 ```
 * ②如果要使用var，可以用闭包来
+
 ```
 for(var i = 0, arr = []; i < 3; i++) {
   arr.push((function(prop){
